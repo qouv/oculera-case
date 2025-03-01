@@ -73,3 +73,9 @@ crashlytics-build.properties
 **/dist
 **/.nuxt
 **/.cache
+
+# React specific ignores
+**/build/
+**/.DS_Store
+**/coverage/
+**/public/
