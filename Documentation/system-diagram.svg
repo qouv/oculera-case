@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Unity Application Box -->
+  <rect x="100" y="100" width="200" height="120" rx="10" ry="10" fill="#E8F4FD" stroke="#2196F3" stroke-width="2"/>
+  <text x="200" y="140" font-family="Arial" font-size="18" text-anchor="middle" fill="#2196F3">Unity Application</text>
+  <text x="200" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Captures mouse positions</text>
+  <text x="200" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">WebSocket client</text>
+  
+  <!-- WebSocket Server Box -->
+  <rect x="350" y="180" width="200" height="120" rx="10" ry="10" fill="#F1F8E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="450" y="220" font-family="Arial" font-size="18" text-anchor="middle" fill="#4CAF50">WebSocket Server</text>
+  <text x="450" y="245" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Node.js server</text>
+  <text x="450" y="265" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Message broker</text>
+  
+  <!-- React Application Box -->
+  <rect x="600" y="100" width="200" height="120" rx="10" ry="10" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+  <text x="700" y="140" font-family="Arial" font-size="18" text-anchor="middle" fill="#FF9800">React Application</text>
+  <text x="700" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Visualizes movements</text>
+  <text x="700" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">WebSocket client</text>
+  
+  <!-- Data Flow Arrows -->
+  <!-- Unity to Server -->
+  <path d="M300 160 L350 220" stroke="#2196F3" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="295" y="175" font-family="Arial" font-size="12" fill="#2196F3">Mouse Position Data</text>
+  
+  <!-- Server to React -->
+  <path d="M550 220 L600 160" stroke="#4CAF50" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="565" y="175" font-family="Arial" font-size="12" fill="#4CAF50">Real-time Updates</text>
+  
+  <!-- Reconnection Arrows -->
+  <path d="M175 220 C150 300 250 350 300 300 L350 240" stroke="#9E9E9E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowheadDashed)"/>
+  <text x="220" y="320" font-family="Arial" font-size="12" fill="#9E9E9E">Auto Reconnection</text>
+  
+  <path d="M725 220 C750 300 650 350 600 300 L550 240" stroke="#9E9E9E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowheadDashed)"/>
+  <text x="670" y="320" font-family="Arial" font-size="12" fill="#9E9E9E">Auto Reconnection</text>
+  
+  <!-- Message Queue Box -->
+  <rect x="100" y="350" width="200" height="80" rx="10" ry="10" fill="#E1F5FE" stroke="#03A9F4" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="200" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#03A9F4">Message Queue</text>
+  <text x="200" y="405" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Handles disconnections</text>
+  
+  <!-- Canvas Visualization Box -->
+  <rect x="600" y="350" width="200" height="80" rx="10" ry="10" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="700" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#FF9800">Canvas Visualization</text>
+  <text x="700" y="405" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Fading mouse trail</text>
+  
+  <!-- Arrowhead Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowheadDashed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9E9E9E"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Real-Time Mouse Movement Integration System</text>
+</svg>
